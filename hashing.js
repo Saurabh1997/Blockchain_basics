@@ -10,11 +10,10 @@ const dataObject = {
 
 
 function generateHash(obj) {
-    console.log(obj)
     let a = JSON.stringify(obj) ///always a good practice to convert an object to String 
     return SHA256(a);
 }
 
 console.log(`SHA256 Hash: ${generateHash(data1)}`); //this will give a constant hash value
 console.log("************************************");
-console.log(`SHA256 Hash: ${generateHash(dataObject)}`); //will generate differecnt values each time as it the timestamp
+console.log(`SHA256 Hash: ${generateHash(dataObject)}`); //will generate differecnt values each time as
